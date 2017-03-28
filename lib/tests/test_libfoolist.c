@@ -14,6 +14,12 @@ int main()
       return -1;
     }
 
+  if (foolist_insert_end(&list, 20) < 0)
+    {
+      perror("Cannot insert '0' at the end of the list");
+      return -1;
+    }
+
   if (foolist_insert_begin(&list, 1) < 0)
     {
       perror("Cannot insert '1' at the beginning of the list");
